@@ -1,7 +1,7 @@
 <template>
   <div id="event-details">
     <h5>{{event.title}}</h5>
-    <p>{{event}}</p>
+    <!-- <p>{{event}}</p> -->
   </div>
 </template>
 

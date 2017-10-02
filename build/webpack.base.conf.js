@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
@@ -8,6 +9,20 @@ function resolve (dir) {
 }
 
 module.exports = {
+  plugins: [
+    // new webpack.DefinePlugin({
+    //   API_URL: apiHost,
+    //   ELSA_BUILD: ELSA_BUILD,
+    // }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      'window.Tether': "tether",
+      "Tether": "tether",
+      "moment": "moment"
+    })
+  ],
+
   entry: {
     app: './src/main.js'
   },

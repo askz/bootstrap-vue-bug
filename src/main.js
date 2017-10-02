@@ -7,10 +7,11 @@ Vue.config.productionTip = false
 
 window.jQuery = window.$ = require('jquery')
 
+import Tether from 'tether'
+import 'popper.js'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'popper.js'
 Vue.use(BootstrapVue);
 
 import FullCalendar from 'vue-full-calendar'
